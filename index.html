@@ -4,6 +4,81 @@
 @media(max-width:700px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:390px){.grid{grid-template-columns:1fr}}
 </style></head><body>
   <img src="Banner%20Gaming%20Neon%20YANZ%20STORE.png" alt="YANZ STORE" style="width:100%;border-radius:15px;">
+  <style>
+.product-section {
+  padding: 20px;
+  background: #071426;
+  color: white;
+}
+.product-section h2 {
+  color: #35aaff;
+  text-align: center;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.product-card {
+  background: #102b49;
+  border: 1px solid #168cff;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 0 12px #087bff55;
+}
+.product-card h3 {
+  font-size: 16px;
+}
+.product-card p {
+  color: #43baff;
+  font-weight: bold;
+}
+.buy-btn {
+  display: block;
+  background: #087bff;
+  color: white;
+  padding: 10px;
+  border-radius: 9px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
+
+<div class="product-section">
+  <h2>🔥 PRODUK YANZ STORE</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <h3>🎮 Akun Roblox</h3>
+      <p>Mulai Rp10.000</p>
+      <a class="buy-btn"
+      href="https://wa.me/62882000059866?text=Min%20saya%20mau%20beli%20akun%20Roblox">
+      BELI SEKARANG
+      </a>
+    </div>
+
+    <div class="product-card">
+      <h3>💎 Top Up Game</h3>
+      <p>Mulai Rp5.000</p>
+      <a class="buy-btn"
+      href="https://wa.me/62882000059866?text=Min%20saya%20mau%20top%20up">
+      BELI SEKARANG
+      </a>
+    </div>
+
+    <div class="product-card">
+      <h3>⚔️ Item Game</h3>
+      <p>Mulai Rp5.000</p>
+      <a class="buy-btn"
+      href="https://wa.me/62882000059866?text=Min%20saya%20mau%20beli%20item">
+      BELI SEKARANG
+      </a>
+    </div>
+
+  </div>
+</div>
 <header><div class="brand">YANZ <span>STORE</span></div><div><button class="secondary" onclick="go('produk')">Produk</button> <button onclick="go('cart')">🛒 <span id="count">0</span></button> <button onclick="admin()">Admin</button></div></header>
 <main class="wrap"><div class="hero"><div><div style="color:#8fc1ff;font-weight:800;letter-spacing:2px">YOUR GAME • YOUR STORE</div><h1>Temukan kebutuhan gaming kamu.</h1><p class="muted">Jual beli akun game, top up, dan item game. Pilih produk, masukkan ke keranjang, lalu pesan melalui WhatsApp.</p></div><div class="banner"><div>WELCOME TO</div><b>YANZ STORE</b><div style="font-size:45px;margin:18px 0">🎮 💎</div><div>Game items • Top up • Digital goods</div></div></div>
 <section id="produk"><h2>Produk pilihan</h2><div class="filters"><button class="active" onclick="filter('Semua',this)">Semua</button><button onclick="filter('Akun Game',this)">Akun Game</button><button onclick="filter('Top Up',this)">Top Up</button><button onclick="filter('Item Game',this)">Item Game</button></div><div class="grid" id="products"></div></section>
